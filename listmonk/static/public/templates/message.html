@@ -1,0 +1,14 @@
+{{ define "message" }}
+{{ template "head" .}}
+<p class="message">{{ .Data.Message }}</p>
+<script>
+	if (window.location !== window.parent.location) {
+		eventData = {'type': 'message', 'action': 'displayed', 'value': "{{ .Data.Message }}"};
+		parent.postMessage(eventData, 'https://aphroconfuso.mt');
+		document.body.classList.remove('hide-message');
+	} else {
+		location.replace("https://aphroconfuso.mt/#" + btoa(unescape(encodeURIComponent("aaaASUDHASUWYQQU55%$ASGDGAS*Jhh23423|{{ .Data.Message }}"))));
+	}
+</script>
+{{ template "footer" .}}
+{{ end }}

@@ -1,0 +1,47 @@
+{{ define "subscription-form" }}
+{{ template "head" .}}
+<p>Aphroconfuso huwa ġurnal letterarju. <u>Se jibda dalwaqt!</u></p>
+<p>Abbona fin-newsletter u nibagħtu ngħidulek kull meta jkollna xi aħbar:</p>
+<form method="post" action="" class="form" lang="mt">
+	<input name="email" required="true" type="email" placeholder="email" title="Daħħal l-email tiegħek hawnhekk. Kun ċert li fih '@'' fin-nofs, u '.' fit-tieni parti.">
+	<button type="submit" class="button" onClick="analyticsSubmitted()">Abbona</button>
+	<div class="lists">
+		<h2>{{ L.T "globals.terms.lists" }}</h2>
+		{{ range $i, $l := .Data.Lists }}
+		<div class="row">
+			<div class="one column">
+				<input checked="true" id="l-{{ $l.UUID}}" type="checkbox" name="l" value="{{ $l.UUID }}">
+			</div>
+			<div class="eleven columns">
+				<label for="l-{{ $l.UUID}}">{{ $l.Name }}</label>
+			</div>
+		</div>
+		{{ end }}
+	</div>
+</form>
+<script>
+	const analyticsSubmitted = () => {
+		eventData = {'type': 'click', 'action': 'submitted'};
+		parent.postMessage(eventData, 'https://aphroconfuso.mt');
+	}
+
+	// Form validation
+
+	const input = document.querySelector('input[name="email"]');
+
+	input.addEventListener('invalid', function (event) {
+		if (event.target.validity.valueMissing) {
+			event.target.setCustomValidity('Jekk jogħġbok daħħal l-indirizz tal-email tiegħek hawnhekk.');
+		}
+		if (event.target.validity.typeMismatch) {
+			event.target.setCustomValidity('Jekk jogħġbok kun ċert li daħħalt indirizz validu.');
+		}
+	})
+
+	input.addEventListener('change', function (event) {
+		event.target.setCustomValidity('');
+	})
+
+</script>
+{{ template "footer" .}}
+{{ end }}

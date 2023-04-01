@@ -1,0 +1,38 @@
+{{ define "head" }}
+<!DOCTYPE html>
+<html lang="mt" translate="no">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Aphroconfuso | {{ .Data.Title }}</title>
+		<meta name="google" value="notranslate">
+		<meta name="description" content="{{ .Data.Description }}" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+		<link href="/public/static/style-104.css" rel="stylesheet" type="text/css" />
+	</head>
+
+	<body class="hide-message">
+		<div class="container">
+			{{ end }}
+			{{ define "header" }}
+			<header class="header">
+				<div class="logo">
+					{{ if ne .LogoURL "" }}
+					<img src="{{ .LogoURL }}" alt="{{ .Data.Title }}" />
+					{{ else }}
+					<img src="/public/static/logo.svg" alt="{{ .Data.Title }}" />
+					{{ end }}
+				</div>
+			</header>
+			{{ end }}
+
+			{{ define "footer" }}
+		</div>
+
+		<!-- <div class="container">
+			<footer class="footer">&nbsp;</footer>
+		</div> -->
+	</body>
+
+</html>
+{{ end }}
