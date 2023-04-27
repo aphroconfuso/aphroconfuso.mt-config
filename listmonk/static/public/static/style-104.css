@@ -2,7 +2,7 @@
   --light-brown: hsl(26, 5%, 28%);
   --lighter-brown: hsl(26, 5%, 48%);
   --mobile-breakpoint-plusone: 450px;
-  --paper: hsl(60, 20%, 97%);
+  --paper: hsl(60, 33%, 96%);
   --cyan: hsl(180, 100%, 27%);
   --sans: 'Alegreya Sans', sans-serif;
 }
@@ -120,4 +120,8 @@ input::placeholder {
     margin: 0.6rem 0 0 0.25rem;
     width: auto;
   }
+}
+
+.style-1 {
+	background-color: red !important;
 }

@@ -20,6 +20,8 @@
 	</div>
 </form>
 <script>
+	document.body.classList.add(location.hash.replace('#', ''));
+
 	const analyticsSubmitted = () => {
 		eventData = {'type': 'click', 'action': 'submitted'};
 		parent.postMessage(eventData, 'https://aphroconfuso.mt');
