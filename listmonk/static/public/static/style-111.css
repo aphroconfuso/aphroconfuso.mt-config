@@ -139,3 +139,6 @@ body.homepage p {
 body.homepage button {
 	border: 1px solid var(--paper);
 }
+p.message {
+	text-align:left;
+}
