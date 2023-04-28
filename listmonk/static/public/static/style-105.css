@@ -55,7 +55,7 @@ p {
   text-align: center;
 }
 
-u {
+l-m {
 	text-decoration: none;
 	white-space: nowrap;
 }
@@ -122,6 +122,17 @@ input::placeholder {
   }
 }
 
-.style-1 {
-	background-color: red !important;
+.newsletter-page  p,
+.newsletter-page input[type=email] {
+	text-align: left;
+}
+.newsletter-page {
+	align-items: flex-start;
+}
+
+body.homepage {
+	background-color: blueviolet;
+}
+.homepage p {
+	color: var(--paper);
 }

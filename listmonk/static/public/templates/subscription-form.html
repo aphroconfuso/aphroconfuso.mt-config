@@ -1,7 +1,6 @@
 {{ define "subscription-form" }}
 {{ template "head" .}}
-<p>Aphroconfuso huwa ġurnal letterarju. <u>Se jibda dalwaqt!</u></p>
-<p>Abbona fin-newsletter u nibagħtu ngħidulek kull meta jkollna xi aħbar:</p>
+<p>Abbona <l-m>fin-newsletter</l-m> u nibagħtu ngħidulek kull meta jkollna xi aħbar:</p>
 <form method="post" action="" class="form" lang="mt">
 	<input name="email" required="true" type="email" placeholder="email" title="Daħħal l-email tiegħek hawnhekk. Kun ċert li fih '@'' fin-nofs, u '.' fit-tieni parti.">
 	<button type="submit" class="button" onClick="analyticsSubmitted()">Abbona</button>
@@ -20,7 +19,7 @@
 	</div>
 </form>
 <script>
-	document.body.classList.add(location.hash.replace('#', ''));
+	!!location.hash && document.body.classList.add(location.hash.replace('#', ''));
 
 	const analyticsSubmitted = () => {
 		eventData = {'type': 'click', 'action': 'submitted'};
