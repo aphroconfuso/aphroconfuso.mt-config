@@ -131,6 +131,7 @@ body.newsletter-page input[type=email] {
 	text-align: left !important;
 }
 body.homepage {
+	padding: 1rem;
 	background-color: var(--purple);
 }
 body.homepage p {
