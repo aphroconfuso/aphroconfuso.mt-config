@@ -97,12 +97,16 @@
 	</head>
     <body style="background-color: #f9f9f6; font-family: 'Alegreya Sans', 'Helvetica Neue', 'Segoe UI', Helvetica, sans-serif; font-size: 16px; line-height: 26px; margin: 0; color: #4b4744;">
     <div class="gutter">&nbsp;</div>
-    <div class="wrap" style="background-color: #f9f9f6;padding: 30px;max-width: 525px;margin: 0 auto;border-radius: 5px;">
-        <div class="header">
-            {{ if ne LogoURL "" }}
-            <a href="https://aphroconfuso.mt"><img src="{{ LogoURL }}" alt="logo: Aphroconfuso" /></a>
-            {{ end }}
-        </div>
+    <div class="wrap" style="background-color: #f9f9f3;padding: 30px;max-width: 525px;margin: 0 auto;border-radius: 5px;">
+			<header class="header">
+					<div class="logo">
+						{{ if ne .LogoURL "" }}
+						<img src="{{ .LogoURL }}" alt="{{ .Data.Title }}" />
+						{{ else }}
+						<img src="/public/static/logo.svg" alt="{{ .Data.Title }}" />
+						{{ end }}
+					</div>
+				</header>
         <div>{{ template "content" . }}<div>
         <div class="footer" style="text-align: center;font-size: 12px;color: #888;">
             <p>
