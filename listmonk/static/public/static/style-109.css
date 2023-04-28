@@ -4,6 +4,7 @@
   --mobile-breakpoint-plusone: 450px;
   --paper: hsl(60, 33%, 96%);
   --cyan: hsl(180, 100%, 27%);
+	--purple: hsl(250, 50%, 47.5%);
   --sans: 'Alegreya Sans', sans-serif;
 }
 
@@ -125,18 +126,13 @@ input::placeholder {
 body.newsletter-page {
 	align-items: flex-start;
 }
-
-.newsletter-page  p,
-.newsletter-page input[type=email] {
+body.newsletter-page  p,
+body.newsletter-page input[type=email] {
 	text-align: left;
 }
-.newsletter-page {
-	align-items: flex-start;
-}
-
 body.homepage {
-	background-color: blueviolet;
+	background-color: var(--purple);
 }
-.homepage p {
+body.homepage p {
 	color: var(--paper);
 }
