@@ -104,11 +104,7 @@
 		<div class="wrap">
 			<header class="header">
 				<div class="logo">
-					{{ if ne .LogoURL "" }}
-					<img src="{{ .LogoURL }}" alt="{{ .Data.Title }}" />
-					{{ else }}
 					<img src="/public/static/logo.svg" alt="{{ .Data.Title }}" />
-					{{ end }}
 				</div>
 			</header>
 			{{ end }}
