@@ -122,6 +122,10 @@ input::placeholder {
   }
 }
 
+body.newsletter-page {
+	align-items: flex-start;
+}
+
 .newsletter-page  p,
 .newsletter-page input[type=email] {
 	text-align: left;
