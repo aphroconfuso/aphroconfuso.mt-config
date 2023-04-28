@@ -102,11 +102,11 @@
 	<body style="background-color: #f9f9f3;">
 		<div class="gutter">&nbsp;</div>
 		<div class="wrap">
-			<header class="header">
-				<div class="logo">
-					<img src="/public/static/logo.svg" alt="Aphroconfuso" />
-				</div>
-			</header>
+			<div class="header">
+				{{ if ne LogoURL "" }}
+				<a href="https://aphroconfuso.mt"><img src="{{ LogoURL }}" alt="logo: Aphroconfuso" /></a>
+				{{ end }}
+			</div>
 			{{ end }}
 
 			{{ define "footer" }}

@@ -123,16 +123,19 @@ input::placeholder {
   }
 }
 
-body.newsletter-page {
+body.newsletter-page .container {
 	align-items: flex-start;
 }
 body.newsletter-page  p,
 body.newsletter-page input[type=email] {
-	text-align: left;
+	text-align: left !important;
 }
 body.homepage {
 	background-color: var(--purple);
 }
 body.homepage p {
 	color: var(--paper);
+}
+body.homepage button {
+	border: 1px solid var(--paper);
 }
