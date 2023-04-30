@@ -20,8 +20,10 @@
 </form>
 <script>
 	!!location.hash && document.body.classList.add(location.hash.replace('#', ''));
-	if (location.hash.length === 7) {
-		document.body.style.backgroundColor = location.hash;
+	if (location.hash.length === 15) {
+		const hashArray = location.hash.split('|');
+		document.body.style.backgroundColor = hashArray[0];
+		document.querySelector('p').style.color = hashArray[1];
 		document.body.style.padding = '2rem';
 	}
 
