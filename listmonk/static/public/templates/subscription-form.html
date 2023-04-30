@@ -20,6 +20,10 @@
 </form>
 <script>
 	!!location.hash && document.body.classList.add(location.hash.replace('#', ''));
+	if (location.hash.length === 7) {
+		document.body.style.backgroundColor = location.hash;
+		document.body.style.padding = '2rem';
+	}
 
 	const analyticsSubmitted = () => {
 		eventData = {'type': 'click', 'action': 'submitted'};
