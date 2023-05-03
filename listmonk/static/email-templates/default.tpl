@@ -5,7 +5,13 @@
 			<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
 			<base target="_blank">
 			<style>
-					@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400&display=swap');
+					@font-face {
+						font-family: "Alegreya Sans";
+						src: url('https://aphroconfuso.mt/fonts/AlegreyaSans-Regular.ttf') format('truetype');
+						font-weight: normal;
+						font-style: normal;
+						font-weight: 400;
+					}
 
 					body {
 							background-color: #f9f9f6;
