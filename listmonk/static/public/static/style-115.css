@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: "Alegreya Sans";
-  src: url('/fonts/AlegreyaSans-Regular.ttf') format('truetype');
+  src: url('/public/static/fonts/AlegreyaSans-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-weight: 400;
