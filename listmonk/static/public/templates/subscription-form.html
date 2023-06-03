@@ -24,7 +24,7 @@
 		const hashArray = location.hash.split('|');
 		document.body.style.backgroundColor = hashArray[0];
 		document.querySelector('p').style.color = hashArray[1];
-		document.body.style.padding = '2rem';
+		document.body.style.padding = hashArray[2];
 	}
 
 	const analyticsSubmitted = () => {
