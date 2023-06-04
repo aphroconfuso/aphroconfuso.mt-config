@@ -111,7 +111,7 @@
     "email.status.importTitle": "Import update",
     "email.status.status": "Status",
     "email.unsub": "Ħassar l-abbonament",
-    "email.unsubHelp": "Ma tridx tibqa tirċiviehom dawn l-emails?",
+    "email.unsubHelp": "Ma tridx tibqa’ tirċivihom dawn l-emails?",
     "email.viewInBrowser": "Aqra din l-email fil-browser",
     "forms.formHTML": "Form HTML",
     "forms.formHTMLHelp": "Use the following HTML to show a subscription form on an external webpage. The form should have the email field and one or more `l` (list UUID) fields. The name field is optional.",
