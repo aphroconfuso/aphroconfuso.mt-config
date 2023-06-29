@@ -2,7 +2,7 @@
 {{ template "head" .}}
 <p>Irċievi email kull meta nippubblikaw xi ħaġa ġdida:</p>
 <form method="post" action="" class="form" lang="mt" autocomplete="off">
-	<input name="email" required="true" type="email" placeholder="email" title="Daħħal l-email tiegħek hawnhekk. Kun ċert li fih '@'' fin-nofs, u '.' fit-tieni parti.">
+	<input name="email" data-lpignore="true" required="true" type="email" placeholder="email" title="Daħħal l-email tiegħek hawnhekk. Kun ċert li fih '@'' fin-nofs, u '.' fit-tieni parti.">
 	<button type="submit" class="button" onClick="analyticsSubmitted()">Abbona</button>
 	<div class="lists">
 		<h2>{{ L.T "globals.terms.lists" }}</h2>
