@@ -97,6 +97,10 @@ input::placeholder {
   color: var(--lighter-brown);
 }
 
+.nowrap {
+	white-space: nowrap;
+}
+
 .lists {
   height: 0;
   visibility: hidden;
