@@ -148,16 +148,16 @@ p.message {
 	text-align:left;
 }
 
-span.sidebar-entry,
-span.sidebar-part {
+span.next-entry,
+span.next-part {
 	display: none;
 }
 
-body.sidebar-entry .sidebar-entry {
+body.sidebar-entry .next-entry {
 	display: inline;
 }
 
-body.sidebar-part .sidebar-part {
+body.sidebar-part .next-part {
 	display: inline;
 }
 
