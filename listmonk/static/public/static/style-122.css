@@ -178,6 +178,11 @@ body.sidebar-part button[type=submit] {
 	background-color: #817a74;
 }
 
+body.sidebar-entry p,
+body.sidebar-part p {
+	text-align: left;
+}
+
 body.sidebar-entry .container,
 body.sidebar-part .container {
 	align-items: flex-start;
@@ -187,4 +192,5 @@ body.sidebar-entry form,
 body.sidebar-part form {
 	align-items: center;
 	flex-direction: row;
+	justify-content: flex-start;
 }
