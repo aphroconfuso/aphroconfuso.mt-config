@@ -171,6 +171,8 @@ body.sidebar-entry input[type=email],
 body.sidebar-part input[type=email] {
 	border-color: #817a74;
 	margin-right: 1rem;
+	text-align: left;
+	width: 13rem;
 }
 
 body.sidebar-entry button[type=submit],
