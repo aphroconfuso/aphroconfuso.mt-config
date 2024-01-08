@@ -180,6 +180,8 @@ body.sidebar-part button[type=submit] {
 
 body.sidebar-entry p,
 body.sidebar-part p {
+	color: #817a74;
+	font-size: 1rem;
 	text-align: left;
 }
 
