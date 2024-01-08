@@ -147,3 +147,46 @@ body.homepage button {
 p.message {
 	text-align:left;
 }
+
+.sidebar-entry,
+.sidebar-part {
+	display: none;
+}
+
+body.sidebar-entry .sidebar-entry {
+	display: inline;
+}
+
+body.sidebar-part .sidebar-part {
+	display: inline;
+}
+
+@media all and (min-width: 1400px) {
+	body.sidebar-entry,
+	body.sidebar-part {
+		color: #817a74;
+		font-size: 1rem;
+	}
+
+	body.sidebar-entry input[type=email],
+	body.sidebar-part input[type=email] {
+		border-color: #817a74;
+		margin-right: 1rem;
+	}
+
+	body.sidebar-entry button[type=submit],
+	body.sidebar-part button[type=submit] {
+		background-color: #817a74;
+	}
+
+	body.sidebar-entry .container,
+	body.sidebar-part .container {
+		align-items: flex-start;
+	}
+
+	body.sidebar-entry form,
+	body.sidebar-part form {
+		align-items: center;
+		flex-direction: row;
+	}
+}

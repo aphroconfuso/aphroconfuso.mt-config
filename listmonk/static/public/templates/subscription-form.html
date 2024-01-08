@@ -1,6 +1,6 @@
 {{ define "subscription-form" }}
 {{ template "head" .}}
-<p><span class="nowrap">Irċievi email kull meta</span> <span class="nowrap">nippubblikaw xi ħaġa ġdida:</span></p>
+<p><span class="nowrap">Irċievi email <span class="next-part">meta toħroġ il-parti li jmiss u </span><span class="next-entry">meta nippublikaw l-entrata li jmiss u </span>kull meta</span> <span class="nowrap">nippubblikaw xi ħaġa ġdida:</span></p>
 <form method="post" action="" class="form" lang="mt" autocomplete="off">
 	<input name="email" data-lpignore="true" required="true" type="email" placeholder="email" title="Daħħal l-email tiegħek hawnhekk. Kun ċert li fih '@'' fin-nofs, u '.' fit-tieni parti.">
 	<button type="submit" class="button" onClick="analyticsSubmitted()">Abbona</button>
