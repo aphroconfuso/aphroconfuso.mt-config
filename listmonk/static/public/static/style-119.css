@@ -148,8 +148,8 @@ p.message {
 	text-align:left;
 }
 
-.sidebar-entry,
-.sidebar-part {
+span.sidebar-entry,
+span.sidebar-part {
 	display: none;
 }
 
