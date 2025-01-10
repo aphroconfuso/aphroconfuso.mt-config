@@ -19,12 +19,14 @@
 	</div>
 </form>
 <script>
-	const hashArray = location.hash.replace('#', '');
-	!!location.hash && document.body.classList.add(hashArray[0]);
-	if (hashArray.length > 1) {
-		document.body.style.backgroundColor = hashArray[1];
-		document.querySelector('p').style.color = hashArray[2];
-		document.body.style.padding = hashArray[3];
+	if (location.hash) {
+		const hashArray = location.hash.replace('#', '').split('|');
+		document.body.classList.add(hashArray[0]);
+		if (hashArray.length > 1) {
+			document.body.style.backgroundColor = hashArray[1];
+			document.querySelector('p').style.color = hashArray[2];
+			document.body.style.padding = hashArray[3];
+		}
 	}
 
 	const analyticsSubmitted = () => {
