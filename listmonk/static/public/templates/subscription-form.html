@@ -21,7 +21,7 @@
 <script>
 	if (location.hash) {
 		const hashArray = location.hash.replace('#', '').split('|');
-		document.body.classList.add(hashArray[0]);
+		if (!!hashArray[0]) document.body.classList.add(hashArray[0]);
 		if (hashArray.length > 1) {
 			document.body.style.backgroundColor = hashArray[1];
 			document.querySelector('p').style.color = hashArray[2];
