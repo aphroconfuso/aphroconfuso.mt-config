@@ -2,7 +2,7 @@
 {{ template "head" .}}
 <p>Irċievi email <span class="next-part">meta toħroġ il-parti li jmiss u </span><span class="next-entry">meta nippubblikaw l-entrata li jmiss u </span> <span class="nowrap">kull meta nippubblikaw xi ħaġa ġdida:</span></p>
 <form method="post" action="" class="form" lang="mt" autocomplete="off">
-	<input name="email" data-lpignore="true" required="true" type="email" placeholder="email" title="Daħħal l-email tiegħek hawnhekk. Kun ċert li fih '@'' fin-nofs, u '.' fit-tieni parti.">
+	<input name="email" data-lpignore="true" required="true" type="email" placeholder="email" autocomplete="email" title="Daħħal l-email tiegħek hawnhekk. Kun ċert li fih '@'' fin-nofs, u '.' fit-tieni parti.">
 	<button type="submit" class="button" onClick="analyticsSubmitted()">Abbona</button>
 	<div class="lists">
 		<h2>{{ L.T "globals.terms.lists" }}</h2>
@@ -19,12 +19,12 @@
 	</div>
 </form>
 <script>
-	!!location.hash && document.body.classList.add(location.hash.replace('#', ''));
-	if (location.hash.length === 30) {
-		const hashArray = location.hash.split('|');
-		document.body.style.backgroundColor = hashArray[0];
-		document.querySelector('p').style.color = hashArray[1];
-		document.body.style.padding = hashArray[2];
+	const hashArray = location.hash.replace('#', '');
+	!!location.hash && document.body.classList.add(hashArray[0]);
+	if (hashArray.length > 1) {
+		document.body.style.backgroundColor = hashArray[1];
+		document.querySelector('p').style.color = hashArray[2];
+		document.body.style.padding = hashArray[3];
 	}
 
 	const analyticsSubmitted = () => {
