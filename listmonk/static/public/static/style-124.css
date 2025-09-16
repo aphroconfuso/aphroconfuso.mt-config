@@ -54,6 +54,7 @@ p {
   color: var(--light-brown);
   font-family: var(--sans);
   text-align: center;
+	text-wrap: balance;
 }
 
 l-m {
@@ -97,10 +98,11 @@ input::placeholder {
   color: var(--lighter-brown);
 }
 
-.nowrap {
+/* .nowrap {
 	white-space: nowrap;
 }
 
+*/
 .lists {
   height: 0;
   visibility: hidden;
